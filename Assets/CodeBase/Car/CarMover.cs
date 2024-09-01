@@ -1,45 +1,56 @@
-﻿using System;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace CodeBase.Car
 {
     public class CarMover : MonoBehaviour
     {
+        private Dictionary<Wheel.Axle, List<Wheel>> _wheelsByAxle = new();
+
         [Header("References")] 
         [SerializeField] private Rigidbody _carRB;
-        [SerializeField] private Transform _transform;
-        [SerializeField] private OnGroundChecker _onGroundChecker;
+        [SerializeField] private List<Wheel> _wheels;
 
         [Header("Movement settings")] 
-        [SerializeField] private float _acceleration;
-        [SerializeField] private float _deceleration;
-        [SerializeField] private float _maxSpeed;
-        [SerializeField] private Transform _movePoint;
-        
-        [Header("Info")]
-        [SerializeField] private float _currentSpeed;
+        [SerializeField] private float _maxAcceleration;
+        [SerializeField] private float _maxSteerAngle;
+        [SerializeField] private float _maxBrake;
 
-        private void Update()
+        private void Start()
         {
-            if (Input.GetKey(KeyCode.W))
-                PressGas();
-            if (Input.GetKey(KeyCode.S))
-                PressBrake();
+            _wheelsByAxle[Wheel.Axle.Front] = _wheels.Where(w => w.AxleType == Wheel.Axle.Front).ToList();
+            _wheelsByAxle[Wheel.Axle.Rear] = _wheels.Where(w => w.AxleType == Wheel.Axle.Rear).ToList();
         }
 
-        public void PressGas() => TryMove(_acceleration, _transform.forward);
-        public void PressBrake() => TryMove(_deceleration, -_transform.forward);
+        private void FixedUpdate() => AnimateWheels();
 
-        private void TryMove(float acceleration, Vector3 dir)
+        public void SetBrake(float isBrake)
         {
-            if (!_onGroundChecker.Check())
-                return;
-            _carRB.AddForceAtPosition(acceleration * dir, _movePoint.position, ForceMode.Acceleration);
-            _currentSpeed = _transform.InverseTransformDirection(_carRB.velocity).z;
-            if (Math.Abs(_currentSpeed) > _maxSpeed)
+            var brake = isBrake * _maxBrake * Time.deltaTime;
+            _wheelsByAxle[Wheel.Axle.Rear].ForEach(w => w.Collider.brakeTorque = brake);
+        }
+
+        public void Turn(float horizontalAxis)
+        {
+            float turning = horizontalAxis * _maxSteerAngle * 0.6f * Time.deltaTime;
+            _wheelsByAxle[Wheel.Axle.Front].ForEach(w => w.Collider.steerAngle = turning);
+        }
+
+        public void Move(float verticalAxis)
+        {
+            float movement = verticalAxis * _maxAcceleration * Time.deltaTime;
+            _wheelsByAxle[Wheel.Axle.Rear].ForEach(w => w.Collider.motorTorque = movement);
+        }
+
+        private void AnimateWheels()
+        {
+            foreach (Wheel wheel in _wheels)
             {
-                _currentSpeed = _maxSpeed;
-                _carRB.velocity = new Vector3(_carRB.velocity.x, _carRB.velocity.y, _maxSpeed);
+                Vector3 pos;
+                Quaternion rotation;
+                wheel.Collider.GetWorldPose(out pos, out rotation);
+                wheel.Transform.rotation = rotation;
             }
         }
     }

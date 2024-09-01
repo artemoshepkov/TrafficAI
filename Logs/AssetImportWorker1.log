@@ -15,7 +15,7 @@ C:/Users/artem/Projects/TrafficAI
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-61390
+57161
 Successfully changed project path to: C:/Users/artem/Projects/TrafficAI
 C:/Users/artem/Projects/TrafficAI
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/artem/Projects/TrafficAI
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [21872] Host "[IP] 192.168.0.103 [Port] 0 [Flags] 2 [Guid] 1215410432 [EditorId] 1215410432 [Version] 1048832 [Id] WindowsEditor(7,Arten) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [3712] Host "[IP] 10.0.85.2 [Port] 0 [Flags] 2 [Guid] 216230866 [EditorId] 216230866 [Version] 1048832 [Id] WindowsEditor(7,Arten) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [21872] Host "[IP] 192.168.0.103 [Port] 0 [Flags] 2 [Guid] 1215410432 [EditorId] 1215410432 [Version] 1048832 [Id] WindowsEditor(7,Arten) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [3712] Host "[IP] 10.0.85.2 [Port] 0 [Flags] 2 [Guid] 216230866 [EditorId] 216230866 [Version] 1048832 [Id] WindowsEditor(7,Arten) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 7.02 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 8.45 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.17f1 (4fc78088f837)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Resources/UnitySubsystems
@@ -70,46 +70,46 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56824
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56384
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005980 seconds.
-- Loaded All Assemblies, in  0.339 seconds
+Registered in 0.006662 seconds.
+- Loaded All Assemblies, in  0.368 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.264 seconds
-Domain Reload Profiling: 601ms
-	BeginReloadAssembly (93ms)
+- Finished resetting the current domain, in  0.298 seconds
+Domain Reload Profiling: 665ms
+	BeginReloadAssembly (114ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
+	RebuildCommonClasses (33ms)
 	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (68ms)
-	LoadAllAssembliesAndSetupDomain (135ms)
-		LoadAssemblies (92ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (150ms)
+		LoadAssemblies (112ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (131ms)
-			TypeCache.Refresh (130ms)
-				TypeCache.ScanAssembly (111ms)
+		AnalyzeDomain (148ms)
+			TypeCache.Refresh (147ms)
+				TypeCache.ScanAssembly (134ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (264ms)
+	FinalizeReload (298ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (208ms)
+		SetupLoadedEditorAssemblies (238ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
+			InitializePlatformSupportModulesInManaged (10ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (148ms)
-			ProcessInitializeOnLoadMethodAttributes (43ms)
+			ProcessInitializeOnLoadAttributes (165ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -117,8 +117,8 @@ Domain Reload Profiling: 601ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.570 seconds
-Refreshing native plugins compatible for Editor in 1.99 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.627 seconds
+Refreshing native plugins compatible for Editor in 2.94 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Package Manager log level set to [2]
@@ -126,67 +126,205 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.719 seconds
-Domain Reload Profiling: 1288ms
-	BeginReloadAssembly (143ms)
+- Finished resetting the current domain, in  0.803 seconds
+Domain Reload Profiling: 1429ms
+	BeginReloadAssembly (149ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (19ms)
-	RebuildCommonClasses (29ms)
+		CreateAndSetChildDomain (20ms)
+	RebuildCommonClasses (37ms)
 	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (352ms)
-		LoadAssemblies (266ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (385ms)
+		LoadAssemblies (289ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (170ms)
-			TypeCache.Refresh (149ms)
-				TypeCache.ScanAssembly (135ms)
-			ScanForSourceGeneratedMonoScriptInfo (12ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (720ms)
+		AnalyzeDomain (185ms)
+			TypeCache.Refresh (165ms)
+				TypeCache.ScanAssembly (152ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (804ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (581ms)
+		SetupLoadedEditorAssemblies (639ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (59ms)
-			ProcessInitializeOnLoadAttributes (489ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (63ms)
+			ProcessInitializeOnLoadAttributes (532ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 2.37 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 2.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3144 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (57.5 KB). Loaded Objects now: 3607.
-Memory consumption went from 128.2 MB to 128.2 MB.
-Total: 4.495800 ms (FindLiveObjects: 0.207800 ms CreateObjectMapping: 0.091600 ms MarkObjects: 4.075400 ms  DeleteObjects: 0.119600 ms)
+Unloading 3140 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (56.9 KB). Loaded Objects now: 3603.
+Memory consumption went from 128.0 MB to 127.9 MB.
+Total: 3.586500 ms (FindLiveObjects: 0.315000 ms CreateObjectMapping: 0.090400 ms MarkObjects: 3.072500 ms  DeleteObjects: 0.106900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/BaseRoadEditor.cs: 510547427f1ea337dbabbec9e25fd5c6 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/TurningRoad.cs: 84daa241889db0b0c22716268a561020 -> 87a857f944501e8c6ceeb309eb052007
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/ShortRoadEditor.cs: 70516dcc5dca2ca268793ed076f64cd2 -> 
+  custom:scripting/monoscript/fileName/EditorWindowsMenues.cs: ae7a661eb23130974768f5bfa104360a -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OnGroundChecker.cs: 99c9b969bb31074cd0ee5d5927032369 -> 
+  custom:scripting/monoscript/fileName/StraightRoad.cs: ac74dd42c1aca487d24a2852e22e8c70 -> 5705f0f0cb321714fc437b9afdf767ec
+  custom:scripting/monoscript/fileName/RoadEditorWindow.cs: 76818d7173f5a2911254e13af67999dc -> 
   custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:scripting/monoscript/fileName/ThreeWaysRoad.cs: 846d26c05580b5babde6f661dc5c61a8 -> c2a972a64a46d2b76d945f94e66c0fdf
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/TrafficTools.cs: cc33a69feca09533a0f3756b523b76e4 -> 
+  custom:scripting/monoscript/fileName/CrossRoadEditor.cs: 104aa8f41f5d2a4df33cfd6443a07837 -> 
+  custom:scripting/monoscript/fileName/GridPlacer.cs: 029c97782f5e104f7b4cae580ef2d539 -> 88e17c104422cada6822bab5e6ec2408
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TurningRoadEditor.cs: 8df78b2ced609316c888f3605147adb3 -> 
   custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
   custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/OnRoadChecker.cs: 1af9722321ecafeaa3ffc185212ba5ef -> 
+  custom:scripting/monoscript/fileName/TrafficEditorWindow.cs: f9664868c009cade0b83120b34f2c04d -> 
+  custom:scripting/monoscript/fileName/Graph.cs: cd29cb982c527e54ee9762e4723ac618 -> 54b8c22f38721b996ef2bdc18726cb60
+  custom:scripting/monoscript/fileName/RoadSpline.cs: 9975a3a3431f534cef09358279cd4e75 -> 
+  custom:scripting/monoscript/fileName/Road.cs: d90b3ae5a91861c09c3d2e45bfe37636 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/MoveOnSpline.cs: 0fac9fd8f6ed57053819a076b408a149 -> 
+  custom:scripting/monoscript/fileName/TrafficGraph.cs: 99c1f7494e1b4e6b2cc0acca1f2d622f -> 
+  custom:scripting/monoscript/fileName/RoadNode.cs: ba36debd69a48fc30fa05c783eac3ddb -> 82e191335d83a6f3ad4c4e9252c994c7
+  custom:scripting/monoscript/fileName/CellComponent.cs: 8f52edce6d7f37973410bcc5a61b3ef5 -> 25f9b7ec8cecc64a5a4a794a86638577
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ShortRoad.cs: 6146ac21ad4b7b1a41e64b0cea3af9e6 -> 
+  custom:scripting/monoscript/fileName/CarSuspension.cs: 57f8e142684f17bd329a16d967ebaa24 -> 
+  custom:scripting/monoscript/fileName/CrossRoad.cs: 2e94e9d690adfab47cd664ada488181b -> 9adc6ee9e210e934530e45e4f8d98c08
+  custom:scripting/monoscript/fileName/CityGrid.cs: 46d1d4187e31858e195dbff8dc4af2cb -> 0d9831dd23b65011bf6e17e1833ba3a5
 ========================================================================
 Received Import Request.
-  Time since last request: 103994.721515 seconds.
-  path: Assets/Scenes/TestMovement.unity
-  artifactKey: Guid(506cae059d6321c4facf42320cc24619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TestMovement.unity using Guid(506cae059d6321c4facf42320cc24619) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1368404e6bab069944f8cc8753a0be8') in 0.003009 seconds
+  Time since last request: 7641.606130 seconds.
+  path: Assets/Resources/Prefabs/City/Road.prefab
+  artifactKey: Guid(77d9728dfe6599845a2cac7b34e41772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/City/Road.prefab using Guid(77d9728dfe6599845a2cac7b34e41772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c073e5d2d35874e371a849b172a673') in 0.151737 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 215
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Resources/Prefabs/City/Roads/TurningRoad.prefab
+  artifactKey: Guid(f3964174565d12a4aa845d3d644a4c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/City/Roads/TurningRoad.prefab using Guid(f3964174565d12a4aa845d3d644a4c15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec74e127cb2c88413d6645306a28c5e') in 0.041089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 32
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Prefabs/City/Roads/CrossRoad.prefab
+  artifactKey: Guid(5195347c24f64b14c901072af0ad65b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/City/Roads/CrossRoad.prefab using Guid(5195347c24f64b14c901072af0ad65b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d2eeb9f12e8f0a94e6d66a35830f50') in 0.033737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 56
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.420 seconds
+Refreshing native plugins compatible for Editor in 2.72 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.066 seconds
+Domain Reload Profiling: 1484ms
+	BeginReloadAssembly (161ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (188ms)
+		LoadAssemblies (267ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (1066ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (624ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (60ms)
+			ProcessInitializeOnLoadAttributes (524ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 3.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3119 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.3 KB). Loaded Objects now: 3616.
+Memory consumption went from 129.7 MB to 129.7 MB.
+Total: 3.501300 ms (FindLiveObjects: 0.238500 ms CreateObjectMapping: 0.145600 ms MarkObjects: 3.036100 ms  DeleteObjects: 0.079100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:scripting/monoscript/fileName/BaseRoadEditor.cs: 510547427f1ea337dbabbec9e25fd5c6 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/TurningRoad.cs: 84daa241889db0b0c22716268a561020 -> 87a857f944501e8c6ceeb309eb052007
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:scripting/monoscript/fileName/ShortRoadEditor.cs: 70516dcc5dca2ca268793ed076f64cd2 -> 
+  custom:scripting/monoscript/fileName/EditorWindowsMenues.cs: ae7a661eb23130974768f5bfa104360a -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/OnGroundChecker.cs: 99c9b969bb31074cd0ee5d5927032369 -> 
+  custom:scripting/monoscript/fileName/StraightRoad.cs: ac74dd42c1aca487d24a2852e22e8c70 -> 5705f0f0cb321714fc437b9afdf767ec
+  custom:scripting/monoscript/fileName/RoadEditorWindow.cs: 76818d7173f5a2911254e13af67999dc -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:scripting/monoscript/fileName/ThreeWaysRoad.cs: 846d26c05580b5babde6f661dc5c61a8 -> c2a972a64a46d2b76d945f94e66c0fdf
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/TrafficTools.cs: cc33a69feca09533a0f3756b523b76e4 -> 
+  custom:scripting/monoscript/fileName/CrossRoadEditor.cs: 104aa8f41f5d2a4df33cfd6443a07837 -> 
+  custom:scripting/monoscript/fileName/GridPlacer.cs: 029c97782f5e104f7b4cae580ef2d539 -> 88e17c104422cada6822bab5e6ec2408
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/TurningRoadEditor.cs: 8df78b2ced609316c888f3605147adb3 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/OnRoadChecker.cs: 1af9722321ecafeaa3ffc185212ba5ef -> 
+  custom:scripting/monoscript/fileName/TrafficEditorWindow.cs: f9664868c009cade0b83120b34f2c04d -> 
+  custom:scripting/monoscript/fileName/Graph.cs: cd29cb982c527e54ee9762e4723ac618 -> 54b8c22f38721b996ef2bdc18726cb60
+  custom:scripting/monoscript/fileName/RoadSpline.cs: 9975a3a3431f534cef09358279cd4e75 -> 
+  custom:scripting/monoscript/fileName/Road.cs: d90b3ae5a91861c09c3d2e45bfe37636 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/MoveOnSpline.cs: 0fac9fd8f6ed57053819a076b408a149 -> 
+  custom:scripting/monoscript/fileName/TrafficGraph.cs: 99c1f7494e1b4e6b2cc0acca1f2d622f -> 
+  custom:scripting/monoscript/fileName/RoadNode.cs: ba36debd69a48fc30fa05c783eac3ddb -> 82e191335d83a6f3ad4c4e9252c994c7
+  custom:scripting/monoscript/fileName/CellComponent.cs: 8f52edce6d7f37973410bcc5a61b3ef5 -> 25f9b7ec8cecc64a5a4a794a86638577
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/ShortRoad.cs: 6146ac21ad4b7b1a41e64b0cea3af9e6 -> 
+  custom:scripting/monoscript/fileName/CarSuspension.cs: 57f8e142684f17bd329a16d967ebaa24 -> 
+  custom:scripting/monoscript/fileName/CrossRoad.cs: 2e94e9d690adfab47cd664ada488181b -> 9adc6ee9e210e934530e45e4f8d98c08
+  custom:scripting/monoscript/fileName/CityGrid.cs: 46d1d4187e31858e195dbff8dc4af2cb -> 0d9831dd23b65011bf6e17e1833ba3a5
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

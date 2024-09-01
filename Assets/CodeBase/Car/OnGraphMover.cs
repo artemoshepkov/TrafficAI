@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using CodeBase.Infrastructure;
+using CodeBase.Roads;
 using UnityEngine;
 
 namespace CodeBase.Car
@@ -7,7 +8,7 @@ namespace CodeBase.Car
     public class OnGraphMover : MonoBehaviour
     {
         private Transform _transform;
-        private Node _currentNode;
+        private RoadNode _currentRoadNode;
 
         [SerializeField] private float _moveSpeed;
         [SerializeField] private float _rotationSpeed;
@@ -15,7 +16,7 @@ namespace CodeBase.Car
         private void Awake() => _transform = transform;
         private void Start() => StartCoroutine(Move());
 
-        public void Init(Node startNode) => _currentNode = startNode;
+        public void Init(RoadNode startRoadNode) => _currentRoadNode = startRoadNode;
 
         private IEnumerator Move()
         {
@@ -25,14 +26,14 @@ namespace CodeBase.Car
             float moveProgress = 0;
             float rotationProgress = 0;
 
-            while (_currentNode != null)
+            while (_currentRoadNode != null)
             {
-                _currentNode = _currentNode.GetRandomConnectedNode();
+                _currentRoadNode = _currentRoadNode.GetRandomConnectedNode();
 
                 startPoint = _transform.position;
-                endPoint = new Vector3(_currentNode.Position.x, _transform.position.y, _currentNode.Position.z);
+                endPoint = new Vector3(_currentRoadNode.Position.x, _transform.position.y, _currentRoadNode.Position.z);
                 
-                var directionToPoint = _currentNode.Position - _transform.position;
+                var directionToPoint = _currentRoadNode.Position - _transform.position;
                 Quaternion targetRotation = Quaternion.LookRotation(directionToPoint);
                 targetRotation.eulerAngles = new Vector3(0f, targetRotation.eulerAngles.y, 0f);
                 
@@ -47,7 +48,7 @@ namespace CodeBase.Car
                     yield return null;
                 }
                 
-                _transform.position = new Vector3(_currentNode.Position.x, _transform.position.y, _currentNode.Position.z);
+                _transform.position = new Vector3(_currentRoadNode.Position.x, _transform.position.y, _currentRoadNode.Position.z);
                 moveProgress = 0;
                 rotationProgress = 0;
                 

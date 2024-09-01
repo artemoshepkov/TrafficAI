@@ -1,4 +1,6 @@
 using CodeBase.Car;
+using CodeBase.Car.Spawners;
+using CodeBase.RoadGraph;
 using CodeBase.Tools.CityEditor;
 using UnityEngine;
 
@@ -9,7 +11,8 @@ namespace CodeBase.Infrastructure
         private CityGrid _grid;
         private GridPlacer _gridPlacer;
         [SerializeField] private MapEditor _mapEditor;
-        [SerializeField] private CarSpawner _carSpawner;
+        [SerializeField] private AICarRandomSpawner _aiCarSpawner;
+        [SerializeField] private PlayerCarRandomSpawner _playerCarSpawner;
         [SerializeField] private int _sizeX;
         [SerializeField] private int _sizeY;
         [SerializeField] private bool IsDefaultMap;
@@ -22,7 +25,8 @@ namespace CodeBase.Infrastructure
             _gridPlacer.PlaceGrid();
 
             _mapEditor.Init(_grid);
-            _carSpawner.Init(_grid, _gridPlacer);
+            _aiCarSpawner.Init(_grid, _gridPlacer);
+            _playerCarSpawner.Init(_grid, _gridPlacer);
         }
 
         private CellType[,] MakeGrid()
@@ -39,19 +43,19 @@ namespace CodeBase.Infrastructure
                 cells[0, 0] = CellType.Road;
                 cells[0, 1] = CellType.Road;
                 cells[0, 2] = CellType.Road;
-                //
-                // cells[0, 0] = CellType.Road;
-                // cells[1, 0] = CellType.Road;
-                // cells[2, 0] = CellType.Road;
-                //
-                // cells[0, 1] = CellType.Road;
-                // // cells[1, 1] = CellType.Road;
-                // cells[2, 1] = CellType.Road;
-                //
-                // cells[0, 2] = CellType.Road;
-                // cells[1, 2] = CellType.Road;
-                // cells[2, 2] = CellType.Road;
-                //
+                
+                cells[0, 0] = CellType.Road;
+                cells[1, 0] = CellType.Road;
+                cells[2, 0] = CellType.Road;
+                
+                cells[0, 1] = CellType.Road;
+                // cells[1, 1] = CellType.Road;
+                cells[2, 1] = CellType.Road;
+                
+                cells[0, 2] = CellType.Road;
+                cells[1, 2] = CellType.Road;
+                cells[2, 2] = CellType.Road;
+                
                 return cells;
             }
         }

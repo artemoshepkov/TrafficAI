@@ -11,7 +11,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{d7f473f3-b1e1-b559-3086-7c75948c2a93}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -45,13 +46,6 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\CodeBase\Editor\Windows\RoadEditorWindow.cs" />
-    <Compile Include="Assets\CodeBase\Editor\Windows\TrafficEditorWindow.cs" />
-    <Compile Include="Assets\CodeBase\Editor\Windows\CrossRoadEditor.cs" />
-    <Compile Include="Assets\CodeBase\Editor\Windows\TurningRoadEditor.cs" />
-    <Compile Include="Assets\CodeBase\Editor\Windows\ShortRoadEditor.cs" />
-    <Compile Include="Assets\CodeBase\Editor\EditorWindowsMenues.cs" />
-    <Compile Include="Assets\CodeBase\Editor\Windows\BaseRoadEditor.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -799,6 +793,9 @@
       <Project>{71f218f6-784c-4450-2ed7-f9ff51756c8f}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\CodeBase\Editor\Windows" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
